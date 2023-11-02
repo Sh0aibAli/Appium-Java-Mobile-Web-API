@@ -104,4 +104,11 @@ This framework consist of packages such as `pages`,`testcases`,`utilities` and `
 `pages` consist of web pages and mobile pages for locating elements and performing actions.
 `testCases` consist of mobile and web related tests.
 `utilities` consist of Java classes such as `AppiumDriverEx` for appium driver session, `DriverFactory` for web session, BaseFunction for defining basic framework functions, `Hooks` for Before and After test hooks, `ExtentReportManager` for spark report configuration with testNG.xml, `PropFileHandler` for reading the properties file. 
-`resources` consist of config.properties file for testData.
+`resources` consist of config.properties file for testData.  
+
+# How to Run the testcases
+There is a testng.xml file in the root folder.    
+Open the testng.xml file   
+Include the respected classes along with their respective methods to the test.    
+Use the specific Application type parameter i.e. `mobile`/`web`  
+Right-click on the xml file and select run with testng.  
