@@ -6,7 +6,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import utils.AppiumDriverEx;
+import utilities.AppiumDriverEx;
 
 public class SwipeVertically {
     public static void main(String[] args) {

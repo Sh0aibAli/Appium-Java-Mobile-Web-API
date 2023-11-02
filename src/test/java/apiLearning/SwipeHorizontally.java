@@ -4,8 +4,8 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import utils.AppiumDriverEx;
-import utils.SwipeAction;
+import utilities.AppiumDriverEx;
+import extra.SwipeAction;
 
 public class SwipeHorizontally {
     public static void main(String[] args) {

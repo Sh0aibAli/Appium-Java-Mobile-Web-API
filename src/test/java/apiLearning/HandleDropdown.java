@@ -2,7 +2,7 @@ package apiLearning;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
-import utils.AppiumDriverEx;
+import utilities.AppiumDriverEx;
 
 public class HandleDropdown {
     public static void main(String[] args) {

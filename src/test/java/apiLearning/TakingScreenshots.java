@@ -5,7 +5,7 @@ import io.appium.java_client.MobileElement;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
-import utils.AppiumDriverEx;
+import utilities.AppiumDriverEx;
 
 import java.io.File;
 import java.io.IOException;

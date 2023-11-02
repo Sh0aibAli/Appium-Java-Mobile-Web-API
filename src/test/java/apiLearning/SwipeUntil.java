@@ -8,7 +8,7 @@ import io.appium.java_client.touch.offset.PointOption;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import utils.AppiumDriverEx;
+import utilities.AppiumDriverEx;
 
 import java.time.Duration;
 

@@ -5,7 +5,7 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
-import utils.AppiumDriverEx;
+import utilities.AppiumDriverEx;
 
 import java.time.Duration;
 

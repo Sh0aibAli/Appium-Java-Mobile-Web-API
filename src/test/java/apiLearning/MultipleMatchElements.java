@@ -5,7 +5,7 @@ import io.appium.java_client.MobileBy;
 import io.appium.java_client.MobileElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import utils.AppiumDriverEx;
+import utilities.AppiumDriverEx;
 
 import java.util.List;
 
