@@ -79,11 +79,24 @@ Link -> https://eclipseide.org/
 # Framework setup  
 1. Create a Maven Project
 2. Add Libraries/Dependencies in POM.xml file  
-   `Selenium Java -> "3.141.59"`,  
-   `Appium java client -> "7.5.1"`,  
+   `java-client -> "7.5.1"`,  
+   `selenium-java -> "3.141.59"`,  
    `guava -> "30.1.1-jre"`,  
    `commons-lang3 -> "3.12.0"`,  
-   `Apache commons-io -> "2.8.0"`  
+   `commons-io -> "2.8.0"`,  
+   `testng -> "7.1.0"`,   
+   `extentreports -> "5.0.9"`,  
+   `webdrivermanager -> "5.5.3"`,  
+   `commons-configuration2 -> "2.9.0"`,  
+   `rest-assured -> "5.1.1"`,    
+   `json-path -> "5.1.1"`,  
+   `json -> "20220320"`,  
+   `json-schema-validator -> "5.1.1"`,  
+   `poi -> "5.2.2"`,  
+   `poi-ooxml -> "5.2.2"`,  
+   `javafaker -> "1.0.2"`,  
+   `log4j-api -> "2.18.0"`,
+   `log4j-core -> "2.18.0"`
 
 3. Connect device  
    `adb devices`  
@@ -100,15 +113,16 @@ Link -> https://eclipseide.org/
 6. Appium Server URL(local Host) - http://127.0.0.1:4723/wd/hub  
 
 # Framework Description  
-This framework consist of packages such as `pages`,`testcases`,`utilities` and `resources`. And testng.xml file for running the testcases. 
+This framework consist of packages such as `api`, `pages`, `testcases`, `utilities` and `resources`. And testng.xml file for running the testcases.  
+`api` consist of `endpoints` and `payloads` packages which further consists of java classes for generating routes and faker user data. 
 `pages` consist of web pages and mobile pages for locating elements and performing actions.  
-`testCases` consist of mobile and web related tests.  
-`utilities` consist of Java classes such as `AppiumDriverEx` for appium driver session, `DriverFactory` for web session, BaseFunction for defining basic framework functions, `Hooks` for Before and After test hooks, `ExtentReportManager` for spark report configuration with testNG.xml, `PropFileHandler` for reading the properties file.  
-`resources` consist of config.properties file for testData.  
+`testCases` consist of api, mobile and web related tests.  
+`utilities` consist of Java classes such as `DataProviders` and `XLUtility` for reading excel files, `AppiumDriverEx` for appium driver session, `DriverFactory` for web session, BaseFunction for defining basic framework functions, `Hooks` for Before and After test hooks, `ExtentReportManager` for spark report configuration with testNG.xml, `PropFileHandler` for reading the properties file.  
+`resources` consist of `config.properties`, `faker_json_schema.json`, `json_schema.json`, `routes.properties` and `Userdata.xlsx` file for testData.  
 
 # How to Run the testcases  
 There is a testng.xml file in the root folder.    
 Open the testng.xml file   
 Include the respected classes along with their respective methods to the test.  
-Use the specific Application type parameter i.e. `mobile`/`web`  
+Use the specific Application type parameter i.e. `mobile`/`web`/`api` also the Hooks class is recommended to call in testng.xml file 
 Right-click on the xml file and select run with testng.  

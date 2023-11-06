@@ -11,9 +11,12 @@ public class Hooks extends BaseFunction{
             appType = applicationType;
             System.out.println("App type is: "+applicationType);
             initializeMobileSession();
-        } else {
+        } else if(applicationType.equals("web")){
             appType = applicationType;
             launchWebApplication(PropFileHandler.readProperty("appUrl"));
+        }else {
+            appType = applicationType;
+            System.out.println("BeforeTest App type is: "+applicationType);
         }
     }
 
@@ -22,8 +25,10 @@ public class Hooks extends BaseFunction{
         if(appType.equals("mobile")){
             System.out.println("Close app type: "+appType);
             closeMobileSession();
-        } else {
+        } else if(appType.equals("web")){
             closeWebSession();
+        }else {
+            System.out.println("AfterTest App type is: "+appType);
         }
     }
 

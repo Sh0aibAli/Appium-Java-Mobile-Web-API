@@ -6,6 +6,15 @@
 	  <listener class-name="utilities.ExtentReportManager"></listener>
   </listeners>
 
+    <test name="API Testing" >
+        <parameter name = "applicationType" value="api"/>
+        <classes>
+            <class name="utilities.Hooks"></class>
+            <class name="testCases.api.UserTests">
+            </class>
+        </classes>
+    </test>
+
     <test name="Contact List App Login Test" >
         <parameter name = "applicationType" value="web"/>
         <classes>
