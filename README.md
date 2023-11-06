@@ -1,5 +1,5 @@
-# Appium-Mobile-Java
-`This Appium project is based on Java along with Selenium`
+# Appium-Java-Mobile-Web-API-TDD
+`This Appium, Selenium and Rest-Assured framework is based on Java along with Maven and TestNG`
 
 # Prerequisites
 1. Appium Desktop Client 
@@ -124,5 +124,5 @@ This framework consist of packages such as `api`, `pages`, `testcases`, `utiliti
 There is a testng.xml file in the root folder.    
 Open the testng.xml file   
 Include the respected classes along with their respective methods to the test.  
-Use the specific Application type parameter i.e. `mobile`/`web`/`api` also the Hooks class is recommended to call in testng.xml file 
+Use the specific Application type parameter i.e. `mobile`/`web`/`api` also the Hooks class is recommended to call in testng.xml file along with the testfile  
 Right-click on the xml file and select run with testng.  
